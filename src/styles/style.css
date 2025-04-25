@@ -173,6 +173,7 @@ nav ul {
 
 /* Medium screens (tablet) */
 @media (max-width: 768px) {
+  /* Navbar */
   .navbar-mid {
     display: none;
   }
@@ -185,8 +186,21 @@ nav ul {
     display: block;
     cursor: pointer;
   }
+
+  /* branded logos */
+  .brand-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 44px 22px;
+  }
 }
 
 /* Small screens (mobile) */
 @media (max-width: 576px) {
+  /* branded logos */
+  .brand-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4px 2px;
+  }
 }
