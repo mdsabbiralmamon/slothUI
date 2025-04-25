@@ -1,0 +1,106 @@
+/* =========================== 
+        Global Styles          
+=============================*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button-primary {
+  border: none;
+  min-height: 48px;
+  padding: 12px 20px;
+  border-radius: 1234px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.112px;
+  cursor: pointer;
+}
+
+.button-outlined {
+  min-height: 48px;
+  padding: 12px 20px;
+  border-radius: 1234px;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.112px;
+  cursor: pointer;
+}
+
+/* =========================== 
+            Navbar          
+=============================*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #475569;
+  line-height: 22px;
+  letter-spacing: -0.112px;
+  padding: 16px 0;
+}
+
+nav img {
+  margin-top: 12px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navbar-end {
+  display: flex;
+  gap: 8px;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* ============================================ 
+            Responsive query section
+===============================================*/
+
+/* Medium screens (tablet) */
+@media (max-width: 768px) {
+  .navbar-mid {
+    display: none;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 576px) {
+}
