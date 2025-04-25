@@ -81,6 +81,61 @@ nav ul {
   cursor: pointer;
 }
 
+/* ===========================================
+          Hero Section                        
+=============================================== */
+.hero {
+  background: linear-gradient(
+    180deg,
+    rgba(79, 70, 229, 0) 70%,
+    rgba(79, 70, 229, 0.9) 100%
+  );
+  margin: 96px 0;
+}
+.hero h5 {
+  display: flex;
+  width: fit-content;
+  padding: 6px 12px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 1234px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.084px;
+}
+
+.hero h2 {
+  align-self: stretch;
+  color: #1e293b;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
+  letter-spacing: -1.08px;
+  margin: 24px 0;
+}
+
+.hero p {
+  align-self: stretch;
+  color: #475569;
+  text-align: center;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.download-buttons {
+  width: fit-content;
+  margin: 48px auto;
+  display: flex;
+  gap: 8px;
+}
+
 /* ============================================ 
             Responsive query section
 ===============================================*/
