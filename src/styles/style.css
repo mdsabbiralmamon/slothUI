@@ -137,6 +137,37 @@ nav ul {
 }
 
 /* ============================================ 
+            brand logo section
+===============================================*/
+.branding-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 64px;
+  padding: 64px 172px;
+  /* max-width: 900px; */
+}
+
+.logo {
+  flex: 1 0 120px;
+  max-width: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ============================================ 
             Responsive query section
 ===============================================*/
 
