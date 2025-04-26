@@ -90,7 +90,7 @@ nav ul {
     rgba(79, 70, 229, 0) 70%,
     rgba(79, 70, 229, 0.9) 100%
   );
-  margin: 96px 0;
+  margin: 96px 0 0 0;
 }
 .hero h5 {
   display: flex;
@@ -119,6 +119,7 @@ nav ul {
   line-height: 68px;
   letter-spacing: -1.08px;
   margin: 24px 0;
+  max-width: 800px;
 }
 
 .hero p {
@@ -139,6 +140,10 @@ nav ul {
 /* ============================================ 
             brand logo section
 ===============================================*/
+.branding {
+  background: #f8fafc;
+}
+
 .branding-container {
   display: flex;
   justify-content: center;
@@ -168,6 +173,88 @@ nav ul {
 }
 
 /* ============================================ 
+            Features section
+===============================================*/
+.features {
+  margin: 96px 0;
+}
+
+.features-container {
+  margin-bottom: 64px;
+}
+
+.features h5 {
+  display: flex;
+  width: fit-content;
+  padding: 6px 12px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 1234px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.084px;
+}
+
+.features h2 {
+  align-self: stretch;
+  color: #1e293b;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
+  letter-spacing: -1.08px;
+  margin: 24px 0;
+}
+
+.features p {
+  align-self: stretch;
+  color: #475569;
+  text-align: center;
+  font-size: 18px;
+  line-height: 160%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.features-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.feature-card {
+  text-align: center;
+}
+
+.feature-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.feature-card h2 {
+  align-self: stretch;
+  color: #1e293b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.feature-card p {
+  align-self: stretch;
+  color: #475569;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+/* ============================================ 
             Responsive query section
 ===============================================*/
 
@@ -193,6 +280,10 @@ nav ul {
     grid-template-columns: repeat(3, 1fr);
     padding: 44px 22px;
   }
+  /* Features  */
+  .features-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Small screens (mobile) */
@@ -202,5 +293,9 @@ nav ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 4px 2px;
+  }
+  /* Features  */
+  .features-cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
