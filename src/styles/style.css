@@ -255,6 +255,91 @@ nav ul {
 }
 
 /* ============================================ 
+            Stats section
+===============================================*/
+.stats {
+  background: #f8fafc;
+  padding: 64px 0;
+}
+
+.stats-container {
+  text-align: center;
+}
+
+.stats-container .imgIcon {
+  margin: auto;
+  display: flex;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 123px;
+  background: #eef2ff;
+}
+
+.stats-container .imgIcon > img {
+  height: 28px;
+  width: 28px;
+  object-fit: contain;
+}
+
+.stats-container > h2 {
+  align-self: stretch;
+  color: #1e293b;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
+  letter-spacing: -1.08px;
+  margin: 24px 0;
+}
+
+.stats-container > p {
+  align-self: stretch;
+  color: #475569;
+  text-align: center;
+  font-size: 18px;
+  line-height: 160%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.stats-container .stats-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 64px;
+}
+
+.stats-counter-card h2 {
+  align-self: stretch;
+  color: #4f46e5;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: -1.08px;
+  margin: 0 32px 16px 32px;
+}
+
+.stats-counter-card p {
+  align-self: stretch;
+  color: #475569;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.144px;
+}
+
+.stats-counter > .line {
+  width: 2px;
+  height: 108px;
+  background: #cbd5e1;
+}
+
+/* ============================================ 
             Responsive query section
 ===============================================*/
 
@@ -283,6 +368,14 @@ nav ul {
   /* Features  */
   .features-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  /* stats */
+  .stats-container .stats-counter {
+    flex-direction: column;
+  }
+
+  .stats-counter > .line {
+    transform: rotate(90deg);
   }
 }
 
