@@ -118,7 +118,7 @@ nav ul {
   font-weight: 800;
   line-height: 68px;
   letter-spacing: -1.08px;
-  margin: 24px 0;
+  margin: 24px auto;
   max-width: 800px;
 }
 
@@ -425,6 +425,104 @@ nav ul {
 }
 
 /* ============================================ 
+            testimonials section
+===============================================*/
+.testimonials {
+  background: #f8fafc;
+  padding: 64px 0;
+}
+
+.testimonial-container > h5 {
+  display: flex;
+  width: fit-content;
+  padding: 6px 12px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 1234px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.084px;
+}
+
+.testimonial-container > h2 {
+  align-self: stretch;
+  color: #1e293b;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 68px;
+  letter-spacing: -1.08px;
+  margin: 24px 0;
+}
+
+.testimonial-container > p {
+  align-self: stretch;
+  color: #475569;
+  text-align: center;
+  font-size: 18px;
+  line-height: 160%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.testimonials-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin: 64px 0;
+}
+
+.tetimonial-card {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.tetimonial-card > p {
+  align-self: stretch;
+  color: #475569;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 24px 0;
+}
+
+.userDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.userDetails-text > h2 {
+  color: #1e293b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.112px;
+}
+
+.userDetails-text > p {
+  color: #475569;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+/* ============================================ 
             Responsive query section
 ===============================================*/
 
@@ -466,6 +564,10 @@ nav ul {
   .features-us {
     flex-direction: column;
   }
+  /* testimonials */
+  .testimonials-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Small screens (mobile) */
@@ -478,6 +580,10 @@ nav ul {
   }
   /* Features  */
   .features-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* testimonials */
+  .testimonials-cards {
     grid-template-columns: repeat(1, 1fr);
   }
 }
