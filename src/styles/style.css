@@ -948,6 +948,10 @@ nav ul {
 
 /* Small screens (mobile) */
 @media (max-width: 576px) {
+  /* hero */
+  .hero h2 {
+    font-size: 36px;
+  }
   /* branded logos */
   .brand-logos {
     display: grid;
