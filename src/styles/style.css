@@ -704,7 +704,6 @@ nav ul {
 ===============================================*/
 .download {
   padding: 64px 112px 0 112px;
-  margin-bottom: 96px;
   background: #eef2ff;
 }
 
@@ -761,6 +760,87 @@ nav ul {
   position: absolute;
   top: 50px;
   right: -50px;
+}
+
+/* ============================================ 
+            Footer section
+===============================================*/
+.footer {
+  display: flex;
+  padding: 96px 112px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42px;
+  background: #f8fafc;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 100px;
+  padding: 20px;
+}
+
+.footer-column h4 {
+  align-self: stretch;
+  color: #1e293b;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.112px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  align-self: stretch;
+  color: #475569;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.112px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 12px 0;
+  width: 100%;
+}
+
+.footer-bottom .logo img {
+  width: 100px;
+  margin: 2px;
+}
+
+.footer-bottom .scroll-top button {
+  background: #e0e7ff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-bottom .scroll-top button:hover {
+  background-color: #6366f1;
+  color: white;
 }
 
 /* ============================================ 
@@ -851,6 +931,19 @@ nav ul {
     top: 300px;
     right: 40px;
   }
+  /* footer */
+  .footer {
+    padding: 12px;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Small screens (mobile) */
@@ -891,5 +984,14 @@ nav ul {
     right: 20px;
     height: auto;
     width: 150px;
+  }
+  /* footer */
+  .footer {
+    padding: 4px;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
   }
 }
