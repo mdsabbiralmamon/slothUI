@@ -700,6 +700,70 @@ nav ul {
 }
 
 /* ============================================ 
+            Download section
+===============================================*/
+.download {
+  padding: 64px 112px 0 112px;
+  margin-bottom: 96px;
+  background: #eef2ff;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.download-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftInfo {
+  flex: 1;
+  margin-bottom: 64px;
+}
+
+.leftInfo h2 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.leftInfo p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.more-button {
+  gap: 10px;
+  border-radius: 1234px;
+  border: 1px solid #4f46e5;
+  background: none;
+  color: #4f46e5;
+}
+
+.rightImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone1 {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+.phone2 {
+  position: absolute;
+  top: 50px;
+  right: -50px;
+}
+
+/* ============================================ 
             Responsive query section
 ===============================================*/
 
@@ -754,6 +818,39 @@ nav ul {
   .faq-container {
     padding: 0 50px;
   }
+  /* download */
+  .download {
+    padding: 64px 12px 0 12px;
+    margin-bottom: 96px;
+    background: #eef2ff;
+  }
+
+  .download-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .download-buttons-container > button {
+    width: 100%;
+  }
+
+  .download-container {
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+  }
+  .phone1 {
+    position: absolute;
+    left: 40px;
+    top: 400px;
+  }
+  .phone2 {
+    position: absolute;
+    top: 300px;
+    right: 40px;
+  }
 }
 
 /* Small screens (mobile) */
@@ -779,5 +876,20 @@ nav ul {
   /* faq */
   .faq-container {
     padding: 0 20px;
+  }
+  /* download */
+  .phone1 {
+    position: absolute;
+    left: 20px;
+    top: 550px;
+    height: auto;
+    width: 150px;
+  }
+  .phone2 {
+    position: absolute;
+    top: 500px;
+    right: 20px;
+    height: auto;
+    width: 150px;
   }
 }
